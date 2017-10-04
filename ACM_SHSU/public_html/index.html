@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ACM@SHSU</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- JQUERY -->
+        <script src="script/jquery-3.2.1.min.js"></script>
+        
+        <!-- BOOTSTRAP -->
+        <script src="script/bootstrap.min.js" ></script>
+        <link href="style/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- APP STYLES -->
+        <link href="style/app.css" rel="stylesheet">
+        <link href="style/splash_screen.css" rel="stylesheet">
+        <link href="style/banner.css" rel="stylesheet">
+        
+        <!-- APP SCRIPTS -->
+        <script src="script/app.js"></script>
+        
+        
+        
+    </head>
+    <body onload="App.init();" class="container">        
+        <div data-include="view/splash_screen.html"></div>
+        <div class="row" data-include="view/banner.html" data-hidden="true"></div>
+        <div class="row" data-hidden="true">
+            <div class="col-xs-12">
+                <div class="row" data-include="view/home.html"></div>
+                <div class="row" data-include="view/projects.html"></div>
+                <div class="row" data-include="view/events.html"></div>
+                <div class="row" data-include="view/news.html"></div>
+                <div class="row" data-include="view/about.html"></div>
+            </div>
+        </div>
+    </body>
+</html>
